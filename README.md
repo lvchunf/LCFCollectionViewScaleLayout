@@ -1,0 +1,2 @@
+# LCFCollectionViewScaleLayout
+一个滚动的具有缩放效果的相册实现。
