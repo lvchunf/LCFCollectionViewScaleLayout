@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LCFPhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="144"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WDd-sL-PlD">
+                        <rect key="frame" x="0.0" y="0.0" width="119" height="144"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WDd-sL-PlD" secondAttribute="bottom" id="4Ud-7L-42P"/>
+                <constraint firstItem="WDd-sL-PlD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Fd8-PV-Vxx"/>
+                <constraint firstAttribute="trailing" secondItem="WDd-sL-PlD" secondAttribute="trailing" id="fzW-n6-NhQ"/>
+                <constraint firstItem="WDd-sL-PlD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kcJ-46-kQd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="119" height="144"/>
+            <connections>
+                <outlet property="photoView" destination="WDd-sL-PlD" id="dhZ-Vq-9Ae"/>
+            </connections>
+            <point key="canvasLocation" x="-92" y="103.44827586206897"/>
+        </collectionViewCell>
+    </objects>
+</document>
